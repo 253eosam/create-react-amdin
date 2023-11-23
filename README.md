@@ -2,6 +2,8 @@
 
 Make simple admin template. (ref mui default template)
 
+> [go to preview](https://react-admin-template-topaz.vercel.app/)
+
 ## tech
 - React + TypeScript + Vite
 - MUI
