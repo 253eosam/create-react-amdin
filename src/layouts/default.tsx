@@ -1,10 +1,9 @@
+import AppContent from '@/components/AppContent'
 import AppHeader from '@/components/AppHeader'
-import AppPathArea from '@/components/AppPathArea'
 import AppSidebar from '@/components/AppSidebar'
 import Box from '@mui/material/Box'
 import CssBaseline from '@mui/material/CssBaseline'
 import React from 'react'
-import { Outlet } from 'react-router'
 
 type Props = unknown
 
@@ -16,9 +15,10 @@ const Default: React.FC<Props> = () => {
       <CssBaseline />
       <AppHeader open={open} setOpen={setOpen}></AppHeader>
       <AppSidebar open={open} setOpen={setOpen}></AppSidebar>
-      <Box component={'main'} sx={{ flexGrow: 1, p: 3 }}>
-        <AppPathArea></AppPathArea>
-        <Outlet/>
+      <Box sx={{ position: 'relative', width: '100%' }}>
+        <Box component={'main'} sx={{ flexGrow: 1, p: 3 }}>
+          <AppContent />
+        </Box>
       </Box>
     </Box>
   )
