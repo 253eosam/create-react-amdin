@@ -1,14 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import TestComponent from './components/TestComponent'
 import DefaultLayout from '@/layouts/default'
 import './App.css'
+import AppContent from './components/AppContent'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
-          <Route path="f" element={<TestComponent />}></Route>
+          <Route path="f" element={<AppContent />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
