@@ -20,7 +20,7 @@ export default function AppRoutes() {
           <Route path="a" element={<Home />} />
         </Route>
       </Route>
-      <Route path="*" element={<p>Not Found</p>} />
+      <Route path="/*" element={<p>Not Found</p>} />
     </Routes>
   )
 }
