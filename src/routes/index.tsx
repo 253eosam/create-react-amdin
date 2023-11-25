@@ -9,18 +9,18 @@ const Home = React.lazy(() => import('@/views/home'))
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
-        <Route path="" element={<Home />} />
-        <Route path="a" element={<Home />} />
-        <Route path="b" element={<Home />} />
+      <Route path='/' element={<DefaultLayout />}>
+        <Route path='' element={<Home />} />
+        <Route path='a' element={<Home />} />
+        <Route path='b' element={<Home />} />
       </Route>
-      <Route path="/user" element={<DefaultLayout />}>
-        <Route path="" element={<Home />} />
-        <Route path=":id">
-          <Route path="a" element={<Home />} />
+      <Route path='/user' element={<DefaultLayout />}>
+        <Route path='' element={<Home />} />
+        <Route path=':id'>
+          <Route path='a' element={<Home />} />
         </Route>
       </Route>
-      <Route path="*" element={<p>Not Found</p>} />
+      <Route path='*' element={<p>Not Found</p>} />
     </Routes>
   )
 }

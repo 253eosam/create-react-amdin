@@ -18,12 +18,9 @@ import Link from '@mui/material/Link'
 const drawerWidth = 240
 type Props = unknown
 const AppSidebar: React.FC<Props> = () => {
-
-  console.log('ff')
-  
   return (
     <Drawer
-      variant="permanent"
+      variant='permanent'
       sx={{
         width: drawerWidth,
         flexShrink: 0,
@@ -31,9 +28,9 @@ const AppSidebar: React.FC<Props> = () => {
       }}
     >
       <Toolbar>
-        <Link href='/' color='inherit' underline="none">
+        <Link href='/' color='inherit' underline='none'>
           <LogoIcon style={{ marginRight: 3, verticalAlign: 'text-bottom' }} />
-          <Typography variant="h6" component="span" sx={{ flexGrow: 1 }}>
+          <Typography variant='h6' component='span' sx={{ flexGrow: 1 }}>
             {APPLICATION.title}
           </Typography>
         </Link>

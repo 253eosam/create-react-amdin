@@ -24,7 +24,7 @@ export default function AppHeader() {
 
   return (
     <AppBar
-      position="fixed"
+      position='fixed'
       sx={{
         width: { sm: `calc(100% - ${STYLE.drawerWidth}px)` },
         ml: { sm: `${STYLE.drawerWidth}px` },
@@ -34,14 +34,14 @@ export default function AppHeader() {
         <Box component={'div'} sx={{ flexGrow: 1, }}></Box>
         {auth && (
           <div>
-            <Typography variant="subtitle1" component="span" >
+            <Typography variant='subtitle1' component='span' >
               {'UserName'}
             </Typography>
-            <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" onClick={handleMenu} color="inherit">
+            <IconButton size='large' aria-label='account of current user' aria-controls='menu-appbar' aria-haspopup='true' onClick={handleMenu} color='inherit'>
               <AccountCircle />
             </IconButton>
             <Menu
-              id="menu-appbar"
+              id='menu-appbar'
               anchorEl={anchorEl}
               anchorOrigin={{
                 vertical: 'top',

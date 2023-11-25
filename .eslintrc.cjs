@@ -4,11 +4,11 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react-hooks/recommended'],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', '@stylistic'],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
-    'jsx-quotes': ['error', 'single']
+    '@stylistic/jsx-quotes': ["error", "prefer-single"]
   },
 }
