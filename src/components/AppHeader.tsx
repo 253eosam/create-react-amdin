@@ -25,6 +25,7 @@ export default function AppHeader() {
   return (
     <AppBar
       position='fixed'
+      color={'primary'}
       sx={{
         width: { sm: `calc(100% - ${STYLE.drawerWidth}px)` },
         ml: { sm: `${STYLE.drawerWidth}px` },
