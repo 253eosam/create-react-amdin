@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-type Props = unknown
+type Props = unknown;
 
 const AppContent: React.FC<Props> = () => {
 

@@ -1,12 +1,12 @@
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
-import { Link, styled } from '@mui/material';
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
+import IconButton from '@mui/material/IconButton'
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar'
+import { Link, styled } from '@mui/material'
 import Common from '@/common'
 import MenuIcon from '@mui/icons-material/Menu'
 import React, { useEffect, useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const drawerWidth = Common.style.DRAWER_WIDTH
 const initPaths = (args: string[] = []) => (['home'].concat(args))
@@ -45,7 +45,7 @@ const AppBar = styled(MuiAppBar, {
       duration: theme.transitions.duration.enteringScreen,
     }),
   }),
-}));
+}))
 
 
 const AppHeader: React.FC<Props> = ({ open , setOpen }) => {
